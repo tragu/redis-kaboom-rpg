@@ -21,9 +21,7 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
-    command: npm run load
-    entrypoint:
-      npm run dev
+    command: sh -c "npm run load && npm run dev"
     depends_on:
       - redis
     network_mode: "host"
