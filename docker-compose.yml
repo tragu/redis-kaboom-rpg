@@ -24,4 +24,3 @@ services:
     command: sh -c "npm run load && npm run dev"
     depends_on:
       - redis
-    network_mode: "host"
